@@ -8,6 +8,7 @@ import { SellerComponent } from './My-Components/seller/seller.component';
 import { HomeComponent } from './My-Components/home/home.component';
 import { LoginComponent } from './My-Components/login/login.component';
 import { CartComponent } from './My-Components/cart/cart.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CartComponent } from './My-Components/cart/cart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,24 @@
-<p>seller works!</p>
+<div class="seller-auth">
+  <div class="header">
+    <h3>Seller SignUp</h3>
+  </div>
+  <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+    <div class="mb-3">
+      <label for="inputName1" class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" id="inputName1" [(ngModel)]="name"
+        (ngModelChange)="onChangeName($event)">
+    </div>
+    <div class="mb-3">
+      <label for="inputEmail1" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="email" (ngModelChange)="onChangeEmail($event)">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword1" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword1" [(ngModel)]="password"
+        (ngModelChange)="onChangePassword($event)">
+    </div>
+    <button type="submit" class="btn btn-primary">SignUp</button>
+  </form>
+</div>
