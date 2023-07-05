@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './My-Components/header/header.component';
-import { SellerComponent } from './My-Components/seller/seller.component';
-import { HomeComponent } from './My-Components/home/home.component';
-import { LoginComponent } from './My-Components/login/login.component';
-import { CartComponent } from './My-Components/cart/cart.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { SellerComponent } from './pages/seller/seller.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { FormsModule } from '@angular/forms';
+import { SellerHomeComponent } from './pages/seller-home/seller-home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SellerComponent,
     HomeComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+    SellerHomeComponent,
   ],
   imports: [
     BrowserModule,
