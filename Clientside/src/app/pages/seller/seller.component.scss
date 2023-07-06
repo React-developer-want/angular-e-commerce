@@ -9,4 +9,16 @@
     padding-bottom: 20px;
     border-radius: 0 0 5px 5px;
   }
+  .btn {
+    width: 100%;
+  }
+  .bottom-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
 }

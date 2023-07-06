@@ -26,3 +26,26 @@ exports.sellerSignup = async (req, res) => {
     })
   }
 }
+
+exports.sellerLogin = async (req, res) => {
+  const { name, email, password } = req.body;
+  try {
+    const user = {
+      email, password
+    };
+    const isUserExists = existingSellerData.find((seller)=> user.email === seller.email && user.password === seller.password);
+    if(!isUserExists) throw new Error(`Seller ${name} does not exist.`)
+
+    res.status(201).json({
+      status:'success',
+      body: {
+        user: isUserExists
+      }
+    })
+  } catch(error){
+    res.status(404).json({
+      status: 'failed',
+      message: error.message
+    })
+  }
+}
