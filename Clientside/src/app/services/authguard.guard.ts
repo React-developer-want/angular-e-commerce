@@ -3,7 +3,6 @@ import { isSellerLoggedIn } from "./auth.service";
 
 
 export const authGuard: CanActivateFn = (route, state) => {
-  
   if(isSellerLoggedIn()) {
     return true;
   }
