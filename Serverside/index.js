@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const { sellerSignup, sellerLogin } = require('./controllers/seller-controller');
+const { sellerSignup, sellerLogin, getSellerData } = require('./controllers/seller-controller');
 
 // middleware
 app.use(cors());
@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/seller-auth/signup', sellerSignup); 
-app.post('/seller-auth/login', sellerLogin); 
+app.post('/seller-auth/login', sellerLogin);
+app.get('/seller', getSellerData);
 
 module.exports = app;

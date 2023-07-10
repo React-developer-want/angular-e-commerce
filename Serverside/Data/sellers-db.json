@@ -1,1 +1,27 @@
-[{"name":"sumit baghel","email":"test@sumit.com","password":"test"},{"name":"test","email":"testuser@gmail.com","password":"testPassword"},{"name":"hello","email":"sarvgtd435216@gmail.com","password":"ka;sdf"},{"name":"he","email":";alsdk","password":"a;sdkf"},{"name":"hey","email":"heh","password":";alskf"}]
+[
+  {
+    "name": "sumit baghel",
+    "email": "test@sumit.com",
+    "password": "test"
+  },
+  {
+    "name": "test",
+    "email": "testuser@gmail.com",
+    "password": "testPassword"
+  },
+  {
+    "name": "hello",
+    "email": "sarvgtd435216@gmail.com",
+    "password": "ka;sdf"
+  },
+  {
+    "name": "he",
+    "email": ";alsdk",
+    "password": "a;sdkf"
+  },
+  {
+    "name": "hey",
+    "email": "heh",
+    "password": ";alskf"
+  }
+]
